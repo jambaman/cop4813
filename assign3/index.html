@@ -4,7 +4,25 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<style
+	<script src="../js/statistics.js"></script>
+	<script>
+	  function doProgram() {
+	  	var numbers=getNumbers(document.getElementById('list').value);
+	  	var mode=getMode(numbers);
+  		if (mode == undefined)
+  			mode = "no mode found";
+  		else
+  			mode = mode.toFixed(2);
+
+  		document.getElementById('mean').value = getMean(numbers).toFixed(2);
+  		document.getElementById('mode').value = mode;
+  		document.getElementById('count').value= getCount(numbers).toFixed(2);
+  		document.getElementById('sum').value=getSum(numbers).toFixed(2);
+  		document.getElementById('median').value=getMedian(numbers).toFixed(2);
+  		document.getElementById('variance').value=getVariance(numbers).toFixed(2);
+  		document.getElementById('deviation').value=getStandardDeviation(numbers).toFixed(2);
+	  }
+	</script>
 </head>
 <body>
 <div class="top_container">
@@ -16,9 +34,9 @@
 		<ul class="navigation">
    			<li><a href="#">Assignments</a>
    				<ul>
-   					<li><a href="index.html">Assignment 1</a></li>
+   					<li><a href="../assign1/index.html">Assignment 1</a></li>
    					<li><a href="../assign2/index.html">Assignment 2</a></li>
-   					<li><a href="../assign3/index.html">Assignment 3</a></li>
+   					<li><a href="index.html">Assignment 3</a></li>
    					<li><a href="#">Assignment 4</a></li>
    					<li><a href="#">Assignment 5</a></li>
    					<li><a href="#">Assignment 6</a></li>
@@ -29,14 +47,67 @@
 	</nav>
 </div>
 
-<div class="content_2">
-	<div class="assignment">
-	<form class="structures">
+<div class="content" style="float:left;margin: 10px;">
+	<div class="assignment2">
+	<form class="structures" action="javascript:doProgram();">
 	<table class="structures">
+	<h3>Do Math</h3>
 	<tr>
-	<td textarea" rows="4" cols="30" name="arrayIn" id="list" >Input numbers or Copy and paste from the sets down below</textarea></td>
-	
-	f
+	<td><textarea rows="4" cols="30" name="arrayIn" id="list"></textarea></td>
+	<td>Input numbers or Copy and paste from the sets down below</td>
+	<tr>
+	<td><input type="text" id="count"></td>
+	<td>Number of Items in List</td>
+	</tr>
+	<tr>
+	<td><input type="text" id="sum"></td>
+	<td>Summation of List</td>
+	</tr>
+	<tr>
+	<td><input type="text" id="mean"></td>
+	<td>Mean</td>
+	</tr>
+	<tr>
+	<td><input type="text" id="median"></td>
+	<td>Median</td>
+	</tr>
+	<tr>
+	<td><input type="text" id="mode"></td>
+	<td>Mode</td>
+	</tr>
+	<tr>
+	<td><input type="text" id="variance"></td>
+	<td>Variance</td>
+	</tr>
+	<tr>
+	<td><input type="text" id="deviation"></td>
+	<td>Deviation</td>
+	</tr>
+	<button type="submit" id="submit">Calculate</button>
+	<button type="reset" id="reset">Reset</button>
+	</tr>
+	</table>
+	</form>
+	</div>
+	</div>
+	<div style="float:left; margin:10px; width: 300px;">
+		<table class="assignment">
+			<tr>
+				<td>2,4,67,87,444,57,28</td>
+			</tr>
+			<tr>
+				<td>444, 444, 654, 2,3,87,2,5,87</td>
+			</tr>
+			<tr>
+				<td>1,2,3,4,5,6,7,8,9</td>
+			</tr>
+		</table>
+		</div>
+		</body>
+		</html>
 
-		<h3>Education</h3> 
+
+	
+
+
 		
