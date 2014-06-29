@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Golf Club Selection Tool</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script type="text/javascript">
+	function output()
+	{
+		document.getElementById('answer').value = getClub();
+	}
+                
+	function getClub()
+	{
+		var getGender = document.getElementsByName("gender");
+		var gender;
+		var getClub = parseInt(document.getElementById("distance").value, 10);
+		//var getClub = parseInt('inputClub');
+		var clubAnswer;
+		
+		for(var i=0;i< getGender.length;i++)
+		{
+			if(getGender[i].checked == true)
+			{
+				gender = getGender[i].value;
+			}
+		}//end for loop
+		if(gender == "Male" && getClub >= 250)
+			{
+				clubAnswer = "Use the driver.";
+			}
+			else if (gender == "Male" &&  (getClub >= 220 && getClub <= 250))
+			{
+				clubAnswer = "Use the 3 Wood.";
+			}
+			else if (gender == "Male" &&  (getClub >= 200 && getClub <= 220))
+			{
+				clubAnswer = "Use the 5 Wood.";
+			}
+			else if (gender == "Male" && (getClub >= 200 && getClub <= 215))
+			{
+				clubAnswer = "Use the Hybrid.";
+			}
+			else if (gender == "Male" && (getClub >= 210 && getClub <= 230))
+			{
+				clubAnswer = "Use the 3 Iron.";
+			}
+			else if (gender == "Male" && (getClub >= 190 && getClub <= 210))
+			{
+				clubAnswer = "Use the 4 Iron.";
+			}
+			else if (gender == "Male" && (getClub >= 175 && getClub <= 190))
+			{
+				clubAnswer = "Use the 5 Iron.";
+			}
+			else if (gender == "Male" && (getClub >= 160 && getClub <= 175))
+			{
+				clubAnswer = "Use the 6 Iron.";
+			}
+			else if (gender == "Male" && (getClub >= 145 && getClub <= 160))
+			{
+				clubAnswer = "Use the 7 Iron.";
+			}
+			else if (gender == "Male" && (getClub >= 135 && getClub <= 145))
+			{
+				clubAnswer = "Use the 8 Iron.";
+			}
+			else if (gender == "Male" && (getClub >= 125 && getClub <= 135))
+			{
+				clubAnswer = "Use the 9 Iron.";
+			}
+			else if (gender == "Male" && (getClub >= 115 && getClub <= 125))
+			{
+				clubAnswer = "Use the Pitching Wedge.";
+			}
+			else if (gender == "Male" && (getClub >= 100 && getClub <= 115))
+			{
+				clubAnswer = "Use the Gap Wedge.";
+			}
+			else if(gender == "Female" && getClub >= 175)
+			{
+				clubAnswer = "Use the driver.";
+			}
+			else if (gender == "Female" && (getClub >= 150 && getClub <= 175)) 
+			{
+				clubAnswer = "Use the 3 Wood.";
+			}
+			else if (gender == "Female" && (getClub >= 135 && getClub <= 150))
+			{
+				clubAnswer = "Use the 5 Wood.";
+			}
+			else if (gender == "Female" && (getClub >=  140 && getClub <= 150))
+			{
+				clubAnswer = "Use the Hybrid.";
+			}
+			else if (gender == "Female" && (getClub >= 125 && getClub <= 135))
+			{
+				clubAnswer = "Use the 3 Iron.";
+			}
+			else if (gender == "Female" && (getClub >= 120 && getClub <= 125))
+			{
+				clubAnswer = "Use the 4 Iron.";
+			}
+			else if (gender == "Female" && (getClub >= 110 && getClub <= 120))
+			{
+				clubAnswer = "Use the 5 Iron.";
+			}
+			else if (gender == "Female" && (getClub >= 100 && getClub <= 110))
+			{
+				clubAnswer = "Use the 6 Iron.";
+			}
+			else if (gender == "Female" && (getClub >= 90 && getClub <= 100))
+			{
+				clubAnswer = "Use the 7 Iron.";
+			}
+			else if (gender == "Female" && (getClub >= 80 && getClub <= 90))
+			{
+				clubAnswer = "Use the 8 Iron.";
+			}
+			else if (gender == "Female" && (getClub >= 70 && getClub <= 80))
+			{
+				clubAnswer = "Use the 9 Iron.";
+			}
+			else if (gender == "Female" &&  (getClub >= 60 && getClub <= 70))
+			{
+				clubAnswer = "Use the Pitching Wedge.";
+			}
+			else if (gender == "Female" && (getClub <= 50 && getClub <= 60))
+			{
+				clubAnswer = "Use the Gap Wedge.";
+			}
+			else
+			{
+			clubAnswer= "You suck.";
+			}
+			return clubAnswer;
+}
+
+</script>
+</head>
+
+
+<body>
+<div class="top_container">
+	<div id="header">
+	<h1>Stephen Jamba</h1>
+<h2>Golf Club Selection Tool</h2>
+	</div>
+		<nav id="navbar">
+			<ul class="navigation">
+   				<li><a href="#">Assignments</a>
+   					<ul>
+   					<li><a href="../assign1/index.html">Assignment 1</a></li>
+   					<li><a href="index.html">Assignment 2</a></li>
+   					<li><a href="../assign3/index.html">Assignment 3</a></li>
+   					<li><a href="#">Assignment 4</a></li>
+   					<li><a href="#">Assignment 5</a></li>
+   					<li><a href="#">Assignment 6</a></li>
+   					</ul>
+   				</li>
+   				<li><a href="../index.html">Home</a></li>
+
+			</ul>
+		</nav>
+	</div>
+<div class="content_2">
+<div class="assignment2">
+<h3>Club Advisor</h3>
+<p>This form will assist you in picking a club for your next shot based on the distance from the pin and gender.  These two sections are required to calculate the club to use.  
+<form name="golfClubSelector" action="javascript:output()">
+Distance from hole in yards: <input type="text" name="distance" id="distance" required="required"><br>
+Gender<br>
+<input type="radio" name="gender" value="Male" id="male" required="required">Male<br>
+<input type="radio" name="gender" value="Female" id="female" required="required">Female<br>
+Wind Speed<br>
+<select  id="distance">
+<option value="hdwind" >Headwind more than 10mph </option>
+<option value="bkwind" >Backwind more than 10mph </option>
+<option value="hvywind" >Any wind more than 20mph </option>
+</select>
+<br>
+Player Level<br>
+<input type="radio" name="status" value="Weekend_Warrior" >Weekend Warrior</input>
+<input type="radio" name="status" value="Amateur" >Amateur</input>
+<input type="radio" name="status" value="Club_Pro" >Club Pro</input>
+<input type="radio" name="status" value="Tour_Pro">Tour Pro</input><br>
+
+<input type="submit" value="Get Your Club" id="jsSubmit"><br>
+<button type="reset" value="Reset">Reset</button>
+<textarea id = "answer" name = "answer" cols="40" rows="4"></textarea><br>
+
+</form>
+<h3>Average Distances For Amatuer Golfers</h3>
+<table>
+	<tr>
+		<th>Club</th>
+		<th>Male Distance</th>
+		<th>Female Distance</th>
+	</tr>
+	<tr>
+		<td>Driver</td>
+		<td>250 yards</td>
+		<td>175yards</td>
+	</tr>
+	<tr>
+		<td>3 Wood</td>
+		<td>220 yards</td>
+		<td>150 yards</td>
+	</tr>
+	<tr>
+		<td>5 Wood</td>
+		<td>200 yards</td>
+		<td>135 yards</td>
+	</tr>
+	<tr>
+		<td>Hybrid</td>
+		<td>200-215 yards</td>
+		<td>140 yards</td>
+	</tr>
+	<tr>
+		<td>2 Iron</td>
+		<td>Don't use it</td>
+		<td>Ditto</td>
+	</tr>
+	<tr>
+		<td>3 Iron</td>
+		<td>210 yards</td>
+		<td>125 yards</td>
+	</tr>
+	<tr>
+		<td>4 Iron</td>
+		<td>190 yards</td>
+		<td>120 yards</td>
+	</tr>
+	<tr>
+		<td>5 Iron</td>
+		<td>175 yards</td>
+		<td>110 yards</td>
+	</tr>
+	<tr>
+		<td>6 Iron</td>
+		<td>160 yards</td>
+		<td>100 yards</td>
+	</tr>
+	<tr>
+		<td>7 Iron</td>
+		<td>145 yards</td>
+		<td>90 yards</td>
+	</tr>
+	<tr>
+		<td>8 Iron</td>
+		<td>135 yards</td>
+		<td>80 yards</td>
+	</tr>
+	<tr>
+		<td>9 Iron</td>
+		<td>125 yards</td>
+		<td>70 yards</td>
+	</tr>
+	<tr>
+		<td>Pitching Wedge(48 Degree)</td>
+		<td>115 yards</td>
+		<td>60 yards</td>
+	</tr>
+	<tr>
+		<td>Gap Wedge(52 Degree)</td>
+		<td>100 yards</td>
+		<td>50 yards</td>
+	</tr>
+	
+</table>
+</div>
+
+<div id="image">
+<img src="Assign2Diagram.png">
+</div>
+
+
+</div>
+</body>
+</html>
