@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 3</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../js/statistics.js"></script>
+	<script>
+	  function doProgram() {
+	  	var numbers=getNumbers(document.getElementById('list').value);
+	  	var mode=getMode(numbers);
+  		if (mode == undefined)
+  			mode = "no mode found";
+  		else
+  			mode = mode.toFixed(2);
+
+  		document.getElementById('mean').value = getMean(numbers).toFixed(2);
+  		document.getElementById('mode').value = mode;
+  		document.getElementById('count').value= getCount(numbers).toFixed(2);
+  		document.getElementById('sum').value=getSum(numbers).toFixed(2);
+  		document.getElementById('median').value=getMedian(numbers).toFixed(2);
+  		document.getElementById('variance').value=getVariance(numbers).toFixed(2);
+  		document.getElementById('deviation').value=getStandardDeviation(numbers).toFixed(2);
+	  }
+	</script>
+</head>
+<body>
+<div class="top_container">
+	<div id="header">
+	<h1>Testing for Assignment 3</h1>
+</div>
+	<nav id="navbar">
+		<ul class="navigation">
+   			<li><a href="#">Assignments</a>
+   				<ul>
+   					<li><a href="../assign1/index.html">Assignment 1</a></li>
+   					<li><a href="../assign2/index.html">Assignment 2</a></li>
+   					<li><a href="index.html">Assignment 3</a></li>
+   					<li><a href="#">Assignment 4</a></li>
+   					<li><a href="#">Assignment 5</a></li>
+   					<li><a href="#">Assignment 6</a></li>
+   				</ul>
+   			</li>
+   			<li><a href="../index.html">Home</a></li>
+   			<li><a href="../assign3/stats.html">Test Results</a></li>
+		</ul>
+	</nav>
+</div>
+
+<div class="assignment3">
+<table class="ass3">
+<h4>Calculation Method</h4>
+  <tr>
+    <td width="60px">Set 1</td>
+    <td width="200px">1, 2, 3, 4, 5, 5</td>
+  </tr>
+  <tr>
+    <td width="60px">Set 2</td>
+    <td width="200px">34, 23, 5, 23, 0, 0, 0</td>
+  </tr>
+  <tr>
+      <td width="60px">Set 3</td>
+      <td width="200px">1, 1, 1, 1, 1, 1, -5</td>
+  </tr>
+  </table>
+  <table class="ass3">
+    <thead>
+    <tr>
+      <th style="border:0"></th>
+      <th style="border:0">Set 1</th>
+      <th style="border:0">Set 2</th>
+      <th style="border:0">Set 3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Count</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Sum</td>
+      <td>20</td>
+      <td>85</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>3.33</td>
+      <td>12.14</td>
+      <td>.25</td>
+    </tr>
+    <tr>
+      <td>Median</td>
+      <td>3.50</td>
+      <td>23.00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Mode</td>
+      <td>5</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Variance</td>
+      <td>2.67</td>
+      <td>201.14</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td>Deviation</td>
+      <td>1.03</td>
+      <td>14.18</td>
+      <td>2.12</td>
+    </tr>
+    <tr>
+      <td>Manual and program calculations produced same results</td>
+      </tr>
+    </tbody>
+    </table>
+    </div>
+    </body>
+
+     
+
+
+
+ 
+  
+    
+    

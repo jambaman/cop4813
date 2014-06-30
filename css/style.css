@@ -41,8 +41,9 @@ h1{
 	margin-bottom: 10px;
 	color: #ffffff;
 	font-weight: 150px;
-
-
+}
+h4{
+	text-align: center;
 }
 h3{
 	font-family: sans-serif;
@@ -141,9 +142,10 @@ hr{
 		 z-index: 900;
 		  }
 .content{
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	margin-top: 20px;
+	float: left;
 }
 .assignment{
 	padding: 5px;
@@ -157,7 +159,7 @@ hr{
 
 }
 .content_2{
-	width: 70%;
+	width: 80%;
 	margin: 0 auto;
 	margin-top: 20px;
 	
@@ -190,29 +192,51 @@ hr{
 	font-size: 14px;
 	font-family:  Verdana, Geneva, sans-serif;
 	float: left;
-	width: 60%px;
+	width: 50%;
 	position: relative;
+	margin: 10px;
 	
 
 	}
 #image{
-		float: right;
-		margin-right: 30px;
-		width: 350px;
+		float: left;
+		margin-right: 20px;
+		width: 400px;
 		height: 700px;
 	}
-	.structure{
-		
-		
-		
-	}
+	
 	th{
 		text-align: center;
 	}
 .sample{
 	float: left;
 }
-.structure{
-	float: left;
-}
 
+.content3{
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.assignment3{
+	padding: 5px;
+	border-width: 4px; 
+	border-color: #54879d;
+	border-style: groove;
+	font-size: 14px;
+	font-family:  Verdana, Geneva, sans-serif;
+	float: center;
+	width: 50%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ass3{
+	width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#ass3{
+	width: 550px;
+	margin-right: auto;
+	margin-left: auto;
+}
