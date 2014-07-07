@@ -11,7 +11,7 @@
   }
   
   if(isset($_POST['submit'])) {
-    $stock = strtoupper($_POST['stock']);
+    $stock = strtoupper($_POST['stock']);//make ticker uppercase for preg match
     $shares = $_POST['shares'];
     
     $myFile = "stockPortfolio.csv";
