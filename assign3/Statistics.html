@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../js/statistics.js"></script>
+	<script>
+	  function doProgram() {
+	  	var numbers=getNumbers(document.getElementById('list').value);
+	  	var mode=getMode(numbers);
+  		if (mode == undefined)
+  			mode = "no mode found";
+  		else
+  			mode = mode.toFixed(2);
+
+  		document.getElementById('mean').value = getMean(numbers).toFixed(2);
+  		document.getElementById('mode').value = mode;
+  		document.getElementById('count').value= getCount(numbers).toFixed(2);
+  		document.getElementById('sum').value=getSum(numbers).toFixed(2);
+  		document.getElementById('median').value=getMedian(numbers).toFixed(2);
+  		document.getElementById('variance').value=getVariance(numbers).toFixed(2);
+  		document.getElementById('deviation').value=getStandardDeviation(numbers).toFixed(2);
+	  }
+	</script>
+</head>
+<body>
+<div class="top_container">
+	<div id="header">
+	<h1>Stephen Jamba</h1>
+<h2><a href="mailto:stevejamba@gmail.com" style="text-align:center">Send me a nice email</a></h2>
+</div>
+	<nav id="navbar">
+		<ul class="navigation">
+   			<li><a href="#">Assignments</a>
+   				<ul>
+   					<li><a href="../assign1/index.html">Assignment 1</a></li>
+   					<li><a href="../assign2/index.html">Assignment 2</a></li>
+   					<li><a href="index.html">Assignment 3</a></li>
+   					<li><a href="#">Assignment 4</a></li>
+   					<li><a href="#">Assignment 5</a></li>
+   					<li><a href="#">Assignment 6</a></li>
+   				</ul>
+   			</li>
+   			<li><a href="../index.html">Home</a></li>
+   			<li><a href="../assign3/statistics.html">Test Results</a></li>
+		</ul>
+	</nav>
+</div>
+
+<div class="content">
+<table class="" >
+<h4>Calculation Method</h4>
+ <tr>
+    <th>Program Set 1</th>
+    <th>Program Set 2</th>
+    <th>Program Set 3</th>
+    <th>Manual Set 1</th>
+    <th>Manual Set 2</th>
+    <th>Manual Set 3</th>
+  </tr>
+  <tr>
+    <td>

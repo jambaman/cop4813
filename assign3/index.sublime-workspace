@@ -1,0 +1,341 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"to",
+				"toFixed"
+			],
+			[
+				"num",
+				"numArray"
+			],
+			[
+				"list",
+				"list-style-position"
+			],
+			[
+				"posi",
+				"background-position"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"n",
+				"nav	Tag"
+			],
+			[
+				"get",
+				"getClub"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"out",
+				"output"
+			],
+			[
+				"outp",
+				"output1"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"l",
+				"list-style"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"MAR",
+				"margin-top"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"h",
+				"h3	Tag"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"border-t",
+				"border-top-color"
+			],
+			[
+				"s",
+				"sans-serif"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"_",
+				"_POST"
+			],
+			[
+				"tba",
+				"tbl_name"
+			],
+			[
+				"th",
+				"that"
+			],
+			[
+				"form-",
+				"form-horizontal"
+			],
+			[
+				"font",
+				"font-family"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 3605,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/stephenjamba/Downloads/microLoginSystem/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Internet Programming/js/statistics.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/Internet Programming/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/Internet Programming/copy.sh",
+		"/Applications/XAMPP/xamppfiles/htdocs/Internet Programming/assign2/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/Internet Programming/assign2/calebfunstuff.c",
+		"/Applications/XAMPP/xamppfiles/htdocs/Internet Programming/assign3/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/Internet Programming/statisticscopy.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/Internet Programming/test.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/Internet Programming/css/style.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/Internet Programming/testing.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/Internet Programming/assign1/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/AFPF/Index.html",
+		"/Users/stephenjamba/Desktop/Randy.html",
+		"/Users/stephenjamba/Desktop/style.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/Internet Programming/grid.css",
+		"/Users/stephenjamba/Desktop/example.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/wip.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/AFPF/css/COMSstyles.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/AFPF/js/jsGeneral.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/AFPF/php/newContactAdmin.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/AFPF/php/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/COMS/index.php",
+		"/Users/stephenjamba/Downloads/DatabaseProject-7/nbproject/project.properties",
+		"/Users/stephenjamba/Downloads/ajax-login-form-using-php-mysql/login.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/AFPF/php/WAEconfig.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/AFPF/php/addContact.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/AFPF/js/login.js",
+		"/Users/stephenjamba/Desktop/WAE/checklogin.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/AFPF/php/checklogin.php",
+		"/Volumes/gator3298.hostgator.com/public_html/wavekicker.com/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/AFPF/php/newContact.php",
+		"/Volumes/gator3298.hostgator.com/public_html/wavekicker.com/web-app/php/newContact.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/AFPF/php/Wavekickerconfig.php",
+		"/Volumes/gator3298.hostgator.com/public_html/wavekicker.com/Index.html",
+		"/Users/stephenjamba/Documents/working-files-2-2/Chapter 05 - Styling with CSS/05-12 Creating background images with a CSS sprite/index.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"-->\n",
+			"	      \n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3605,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1751,
+								1751
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
