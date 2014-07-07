@@ -28,7 +28,7 @@
                 if (floatval($shareNum) > 0) {
                         echo "<tr><td>" . $name . "</td><td>" . $shareNum . "</td><td>$" . $stockValue . "</td><td>" . $lastDate . " ". $lastTime . "</td><td>$" . $posValue . "</td></tr>";
                 } else {
-                        echo "No stocks in portfolio";
+                        
                 }
                 }
                 echo "</table>";
