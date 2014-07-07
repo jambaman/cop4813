@@ -10,30 +10,34 @@
     header("Location:index.php?error=Please login first.");
   }
   
-  if(isset($_POST['submit'])) {
+  if(isset($_POST['submit'])) 
+  {
     $stock = strtoupper($_POST['stock']);
     $shares = $_POST['shares'];
     
     $myFile = "stockPortfolio.csv";
     $fh = fopen($myFile, 'a') or die("can't access file");
     $owned = bought($stock);
-    if(!$owned[0] && valid($stock)) {
-        if(isset($stock)) {
+    if(!$owned[0] && valid($stock)) 
+	{
+        if(isset($stock) && floatval($shares)> 0) 
+		{
           $dateTime = date("M-d-y H:i:s");
           $entry = $stock . "," . $shares . "," . $dateTime . "\r\n";
           fwrite($fh, $entry);
+		  header("Location:admin.php?status=Stock added");
         }
-                if(floatval($shares) > 0) {
-                        header("Location:admin.php?status=Stock added");
-                }
-                else {
-                        header("Location:admin.php?status=No shares selected");
-                }
+                
+        else 
+		{
+           header("Location:admin.php?status=No shares selected");
+        }
     }
-    else {
+    else 
+	{
         header("Location:admin.php?error=$stock is not a valid symbol or you already own it");
     }
-  }?>
+   }?>
 
 <html>
 <head>
