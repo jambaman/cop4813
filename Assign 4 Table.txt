@@ -1,0 +1,24 @@
+CREATE TABLE Contacts (
+	ContactID		INT(4) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	firstName		Varchar(50) NOT NULL,
+	lastName		Varchar(50) NOT NULL,
+	City			Varchar(50),
+	State			Char(2),
+	Phone1			Char(10),
+	Phone2			Char(10),
+	emailPrimary	Varchar(100)
+	);
+
+	INSERT INTO Contacts (firstName, lastName, City, State, Phone1, Phone2, emailPrimary, emailSecondary) VALUES ('Hal', 'Jalikakik', 'Podunk', 'AL', '5555553431', '', 'kickhal@comcast.com', '');
+
+	INSERT INTO Contacts (firstName, lastName, City, State, Phone1, Phone2, emailPrimary, emailSecondary)VALUES ('John', 'Doe', 'DaForest', 'WY', '9043365456', '','notbamby@comcast.com', '');
+
+	INSERT INTO Contacts (firstName, lastName, City, State, Phone1, Phone2, emailPrimary, emailSecondary) VALUES ('Archy', 'Bunker', 'Sassparilla', 'MO', '4546674321', '8009864532', 'archy@gmail.com', '');
+
+	INSERT INTO Contacts (firstName, lastName, City, State, Phone1, Phone2, emailPrimary, emailSecondary) VALUES ('Steve','Jamba', 'Jacksonville','FL','9995554563','1234567890','stevejamba@gmail.com','');
+
+	INSERT INTO Contacts (firstName, lastName, City, State, Phone1, Phone2, emailPrimary, emailSecondary) VALUES ('Margaret', 'Lake', 'Lake Placid', 'ND', '7653318894', '', 'mlake@hotmail.com','');
+	
+
+
+
