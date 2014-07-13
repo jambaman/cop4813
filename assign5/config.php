@@ -6,6 +6,7 @@
         $conn= new mysqli($hostname,$username,$password);
         $conn->select_db($database) or die ("Unable to select database");
         $query = "select * from Employee order by LastName";
+        echo $query;
         $result = mysqli_query($conn, $query);
         ?>
         <table>

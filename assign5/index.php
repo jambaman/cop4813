@@ -37,17 +37,7 @@
 <h2>Employees</h2>
   <?php include('config.php');?>
   </div>
-  <div>
-
-   
-<?php if(isset($error)) {?>
-<p><?php echo $error;?></p>
-<?php } elseif (isset($status)) { ?>
-<p><?php echo $status;?></p>
-<?php }?>
-</div>
-
-</div>
+  </div>
 <div id="footer">
    <h4 id="footerText">&#169;2014:  Stephen Jamba</h4>
 </div>
