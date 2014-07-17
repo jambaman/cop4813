@@ -1,2 +1,5 @@
 http://cop4813.ccec.unf.edu/~n00869815/assign5/index.php
 
+Concerning SQL Injection:  
+The most effort was put towards using prepared statements with mysqli when making any calls to the database.  
+Also performed data type validation on fields where applicable such as phone numbers.  Text fields are difficult to validate other than limiting the size of the field and using the strip slashes or escape characters functions.  The use of bound parameters and prepared statements helps to combat SQL injection a great deal though.  
