@@ -24,9 +24,12 @@
                 </p>
                 <?php
                 } elseif (isset($status)) { ?>
-                <p><?php echo $status; ?></p><?php
-        }
-?>
+                <p><?php echo $status; ?></p>
+                <?php
+                  }
+                ?>
+<h3>Entity Relationship Diagram</h3>
+<img class="image" src="../image/ERDcop4813.png" align="left">
 </div>
 <div id="assignment5">
   <h2>Employees</h2>
