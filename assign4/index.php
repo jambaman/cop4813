@@ -24,7 +24,7 @@
    					<li><a href="../assign2/index.html">Assignment 2</a></li>
    					<li><a href="../assign3/index.html">Assignment 3</a></li>
    					<li><a href="index.php">Assignment 4</a></li>
-   					<li><a href="#">Assignment 5</a></li>
+   					<li><a href="../assign5/index.php">Assignment 5</a></li>
    					<li><a href="#">Assignment 6</a></li>
    				</ul>
    			</li>
