@@ -1,0 +1,307 @@
+
+
+/** Resets **/
+body,
+div,
+article,
+main,
+aside {
+  margin: 0; 
+  padding: 0;
+}
+
+/** All Containers **/
+.float {
+  float: left;  /* Holy Grail Revisited doesn't require any positioning. Floating makes all browsers happy */
+  width: 100%;  /* only required for background colors/images in floated containers */
+}
+
+/** Specific Containers **/
+#pageWrap {
+  max-width: 100%;  /* replacing the fixed width with a percentage (e.g. 100%) creates a fluid page content */
+  margin: 3px auto;  /* if a fixed width is defined we center the page horizontally with auto */
+  border: solid 1px #777;
+}
+#header {
+ display: inline-block;
+ background-color: #cfcfcf;
+  
+}
+#topBox {
+  background: lightblue;
+ 
+}
+#columns {
+  width: 100%;
+  background: beige;
+}
+#col1 {
+  width: 20%;  /* min-width is required for a fluid #col2 content which needs to be set to 100% */
+}
+#col2 {
+  width: 60%;  /* 100% required in combination with min-width values in the side-columns for a fluid content */;
+  background: lavender;
+}
+#col3 {
+  width: 20%;
+}
+#intro {
+  background: aliceblue;
+}
+#main {
+  background: mintcream;
+}
+#outro {
+  background: aliceblue;
+}
+#botBox {
+  background: lightblue;
+}
+#footer {
+  background: silver;
+  text-align: center;
+  font-size: smaller;
+}
+
+/** Media Queries (Responsive Design)) **/
+@media only screen 
+       and (max-width: 759px)
+{
+  #col1,
+  #col2,
+  #intro,
+  #article,
+  #outro,
+  #col3 {
+    float: none;
+    width: 100%;
+    display: inline-block;
+    clear: left;
+  }
+  #header {
+    background: wheat;
+  }
+  #col1 {
+    background: #ffffcc;
+    background-image: -webkit-linear-gradient(top, #dddddd, mediumseagreen);  /* background for the left column */
+    background-image: -moz-linear-gradient(top, #dddddd, mediumseagreen);
+    background-image: -ms-linear-gradient(top, #dddddd, mediumseagreen);
+    background-image: -o-linear-gradient(top, #dddddd, mediumseagreen);
+    background-image: linear-gradient(top, #dddddd, mediumseagreen); 
+  }
+  #col3 {
+    display: inline-block;  /* some clean-up */
+    display: none;  /* toggle this setting to enable/disable #col3 completely or edit the line above */
+    float: none;
+    width: 100%;
+    clear: left;  /* making sure that we get a new row */
+    background: #ffccee;
+    background-image: -webkit-linear-gradient(top, #dddddd, lightcoral);  /* background for the right column */
+    background-image: -moz-linear-gradient(top, #dddddd, lightcoral);
+    background-image: -ms-linear-gradient(top, #dddddd, lightcoral);
+    background-image: -o-linear-gradient(top, #dddddd, lightcoral);
+    background-image: linear-gradient(top, #dddddd, lightcoral);
+  }
+  span.medium,
+  span.large {
+    display: none;
+  }
+}
+@media only screen 
+       and (min-width: 760px)
+       and (max-width: 919px)
+{
+  #col1 {
+    background-image: none;  /* the medium width layout "moves" the background image to the column wrapper */
+  }
+  #col3 {
+    float: none;
+    width: 100%;
+    display: inline-block;  /* some clean-up */
+    clear: left;  /* making sure that we get a new row */
+    background-image: -webkit-linear-gradient(top, #dddddd, lightcoral);  /* background for the right column */
+    background-image: -moz-linear-gradient(top, #dddddd, lightcoral);
+    background-image: -ms-linear-gradient(top, #dddddd, lightcoral);
+    background-image: -o-linear-gradient(top, #dddddd, lightcoral);
+    background-image: linear-gradient(top, #dddddd, lightcoral);
+  }
+  #col2 {
+    width: 80%;
+  }
+  #intro,
+  #article,
+  #outro {
+    width: 100% ;
+  }
+  #columns {
+    background-image:  -webkit-linear-gradient(top, #dddddd, mediumseagreen);  /* background for the left column */
+    background-image:  -moz-linear-gradient(top, #dddddd, mediumseagreen);
+    background-image:  -ms-linear-gradient(top, #dddddd, mediumseagreen);
+    background-image:  -o-linear-gradient(top, #dddddd, mediumseagreen);
+    background-image:  -linear-gradient(top, #dddddd, mediumseagreen);
+    background-position: top left;
+    background-size: 20% 100%;  /* the first value must correlate with the left column width */
+    background-repeat: no-repeat;
+  }
+  #header {
+    background: papayawhip;
+  }
+  span.small,
+  span.large {
+    display: none;
+  }
+}
+@media only screen
+       and (min-width: 920px)
+{
+  .float {
+    float: left;
+    width: 100%; 
+  }
+#columns {
+  width: 100%;
+  /* CSS 3 multiple background images allow us to get rid of the wrapper inflation which was required in
+   * CSS 2 designs (see here: http://matthewjamestaylor.com/blog/perfect-3-column.htm) to fake equalized 
+   * column lenghts (same length columns). We use only two DIV wrappers which is semantically useless,
+   * one wrapper is use for the whole page and one for the columns. More DIV's are not required. */
+  background-image:  -webkit-linear-gradient(top, #dddddd, mediumseagreen),  /* background for the left column */
+  -webkit-linear-gradient(top, #dddddd, lavender),  /* background for the content column */
+  -webkit-linear-gradient(top, #dddddd, lightcoral);  /* background for the right column */
+  background-image:  -moz-linear-gradient(top, #dddddd, mediumseagreen),
+  -moz-linear-gradient(top, #dddddd, lavender),
+  -moz-linear-gradient(top, #dddddd, lightcoral);
+  background-image:  -ms-linear-gradient(top, #dddddd, mediumseagreen),
+  -ms-linear-gradient(top, #dddddd, lavender),
+  -ms-linear-gradient(top, #dddddd, lightcoral);
+  background-image:  -o-linear-gradient(top, #dddddd, mediumseagreen),
+  -o-linear-gradient(top, #dddddd, lavender),
+  -o-linear-gradient(top, #dddddd, lightcoral);
+  background-image:  -linear-gradient(top, #dddddd, mediumseagreen),
+  -webkit-linear-gradient(top, #dddddd, lavender),
+  linear-gradient(top, #dddddd, lightcoral);
+  background-position: top left, top center, top right;
+  background-size: 20% 100%, 60% 100%, 20% 100%;  /* the first and third value must correlate with each column width */
+  background-repeat: no-repeat, no-repeat;
+  }
+  #header {
+    background: cornsilk;
+  }
+  #col1 {
+    background-image: none;  /* the full width layout "moves" the background image to the column wrapper */
+  }
+  #col2 section,
+  #col2 article,
+  #col2 section h1 {
+    padding: 0 5px;  /* this padding in the full view is just to illustration how to create a horizontal content gutter */
+  }
+  #col2 p {
+  padding: 0 3px;
+  }
+  span.medium,
+  span.small {
+    display: none;
+  }
+}
+  
+/** Fonts **/
+body {
+  font-family: sans-serif;
+  font-size: 13px;
+  line-height: 1.15;
+}
+h1,
+h2,
+h3,
+h4 { 
+  margin: 0.5em;
+}
+p {
+  margin: 0.5em;
+}
+a {
+  color: blue;
+}
+#header h1 {
+  margin-left: 10px;
+  font-size: 225%;
+}
+#header header h1,
+#topBox h1,
+#col1 h1,
+#col2 h1,
+#col3 h1,
+#botBox h1 {
+  font-size: 150%;
+}
+
+/** Elements **/
+img.responsive {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/** CSS Indicator **/
+html.css2 .cssver {
+  font-weight: bold;
+  color: #990000;
+}
+html.css3 .cssver {
+  display: none;  /* If CSS 3 is active we are hiding the CSS 2 text */
+} 
+html.css3 .detect:after {
+  content: "CSS 3";  /* If CSS 3 is active we are diaplaying this text */
+  display: inline;
+  font-weight: bold;
+  color: #009900;
+} 
+
+/** Messages **/
+html.nojs #nojs {
+  padding: 3px;
+  font-size: 150%;
+  font-weight: bold;
+  color: khaki;
+  background: #990000;
+}
+html.nocook #nocook {
+  padding: 3px;
+  font-size: 150%;
+  font-weight: bold;
+  color: khaki;
+  background: #990099;
+}
+html.js #nojs,
+html.cook #nocook {
+/* If Javascript is active we are changing in the DOM the class .nojs to .js and disable that way the 
+ * JavaScript error message container */
+  display: none;
+}
+.winSize {
+  font-weight: bold;
+}
+/* You can use the DOM classes even outside the media query */
+.large .winSize {
+  color: green;
+}
+.medium .winSize {
+  color: blue;
+}
+.small .winSize {
+  color: red;
+}
+
+/** Clearfixes **/
+/* Clearfixes are sparingly used in this template but sometimes required */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+} 
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /* For IE 7 (trigger hasLayout) */
+}
+
