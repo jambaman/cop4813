@@ -32,21 +32,50 @@
         </ul>
         </li>
      <li><a href="#">Contact</a></li>
-     <li><a href="#">Sign up</a></li>
      <li><a href="#">Login</a></li>
     </ul>
      </nav>
   <div id=""
 </div><!-- /#topBox -->
 
-<div id="columns" class="float"><div id="col1" class="float">
-  <h1>Left Column</h1>
-  <aside role="complementary">
-    <h2>#col1</h2>
-    <script type="text/javascript">document.write(unescape("%3Cscript src='http" +  (document.location.protocol == 'https:' ? 's' : '') + "://www.coffeecup.com/api/sdrive/forms/form.js?name=registration%2520form%26slug=263104%26width=312%26height=460%26crossdomains=true%26rand=" + Math.floor( Math.random() * 1000000000 ) + "' type='text/javascript'%3E%3C/script%3E"));</script>
+<div id="columns" class="float">
+<div id="col1" class="float">
+  
+ 
+
+    <div id="form_wrapper">
+            <form id="form" name="form" method="post" action="">
+                <h1>Create an Account</h1>
+                    <div class="col-1">
+ 
+                        <label >First Name</label>
+                        <label >Last Name</label>
+                        <label >Email</label>
+                        <label>Choose a Password
+                        <span class="small">At least 1 letter and 1 number</span>
+                        </label>
+                        
+                    </div>
+                    <div class="col-2">
+ 
+                        <input type="text" name="firstname" id="fname" required/>
+                        <input type="text" name="lastname" id="lname" required/>
+ 
+                        <input type="text" name="email" id="email"  required />
+            <input type="password" name="password1" id="password1"  required />
+            
+                        </div>
+ 
+                    <center>
+                      <button type="submit">Register Account</button>
+                    </center>
+ 
+            </form>
+ 
+</div>
     
     
-  </aside>
+
 </div>
 
 <!-- /#col1 -->
