@@ -23,12 +23,17 @@ aside {
   border: solid 1px #777;
 }
 #header {
- display: inline-block;
+ display: block;
  background-color: #cfcfcf;
+ min-width: 400px;
+ width: 90%;
+ margin-left: auto;
+ margin-right: auto;
+ min-height: 200px;
   
 }
 #topBox {
-  background: lightblue;
+  background: #262626;
  
 }
 #columns {
@@ -79,7 +84,9 @@ aside {
     clear: left;
   }
   #header {
-    background: wheat;
+    background: #cfcfcf;
+    max-width: 90%;
+    min-width: 400px;
   }
   #col1 {
     background: #ffffcc;
@@ -100,7 +107,7 @@ aside {
     background-image: -moz-linear-gradient(top, #dddddd, lightcoral);
     background-image: -ms-linear-gradient(top, #dddddd, lightcoral);
     background-image: -o-linear-gradient(top, #dddddd, lightcoral);
-    background-image: linear-gradient(top, #dddddd, lightcoral);
+    background-image: linear-gradient(top, #dddddd, lightfcoral);
   }
   span.medium,
   span.large {
@@ -144,7 +151,9 @@ aside {
     background-repeat: no-repeat;
   }
   #header {
-    background: papayawhip;
+    background: #cfcfcf;
+    min-width: 400px;
+    max-width: 90%;
   }
   span.small,
   span.large {
@@ -184,7 +193,9 @@ aside {
   background-repeat: no-repeat, no-repeat;
   }
   #header {
-    background: cornsilk;
+    background: #cfcfcf;
+    min-width: 400px;
+    max-width: 90%;
   }
   #col1 {
     background-image: none;  /* the full width layout "moves" the background image to the column wrapper */
@@ -301,7 +312,145 @@ html.cook #nocook {
 .clearfix:after {
   clear: both;
 }
-.clearfix {
-  zoom: 1; /* For IE 7 (trigger hasLayout) */
+nav{
+	height: 40px;
+	width: 50%;
+	color: blue;
+	list-style: none outside none;
+	
+	
 }
-
+nav ul {
+  font-family: Arial, Verdana;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li{
+	display: block;
+	position: relative;
+    float: left;
+    vertical-align: center;
+    
+}
+nav li ul{
+	display: none;
+}
+nav ul li a{
+	display: block;
+	text-decoration: none;
+	vertical-align: center;
+	color: #000000;
+	margin-left: 1px;
+	text-align: center;
+	padding: 7px 15px 3px 15px;
+	height: 30px;
+	background: #c0c0c0;
+}
+nav ul li a:hover{
+	background: #597272;
+;
+}
+nav li:hover ul{
+	display: block;
+	position: absolute;
+}
+nav li:hover li{
+	float: none;
+	font-size: 12px;
+}
+nav li:hover a{
+	background: #597272;
+}
+nav li:hover li a:hover{
+	background: #c0c0c0;
+}
+nav ul li ul li a{
+	text-align: left;
+}
+/*animation*/
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 0 #dedede;
+        background-color: #800000;
+        color: #dedede;
+    }
+    50% {
+        box-shadow: 0 0 25px #B4EEB4;
+    }
+    100% {
+        box-shadow: 0 0 0 #B4EEB4;
+        background-color: #B4EEB4;
+    }
+}
+@-webkit-keyframes glow {
+    0% {
+        box-shadow: 0 0 0 #dedede;
+        background-color: #dedede;
+        color: #dedede;
+    }
+    50% {
+        box-shadow: 0 0 25px #B4EEB4;
+    }
+    100% {
+        box-shadow: 0 0 0 #B4EEB4;
+        background-color: #B4EEB4;
+    }
+}
+@-webkit-keyframes aniLink {
+    0% {
+        text-shadow: 0 0 0 #FFFFFF;
+        background: none;
+        color: #FFFFFF;
+    }
+    50% {
+        text-shadow: 0 0 25px #dedede;
+    }
+    100% {
+        text-shadow: 0 0 0 #dedede;
+    }
+}
+@keyframes aniLink {
+    0% {
+        text-shadow: 0 0 0 #FFFFFF;
+        background: none;
+        color: #FFFFFF;
+    }
+    50% {
+        text-shadow: 0 0 25px #dedede;
+    }
+    100% {
+        text-shadow: 0 0 0 #dedede;
+    }
+}
+.cButton {
+    border-radius: 10px;
+    background-color: #4b4b4b;
+    padding: 12px 17px 14px 17px;
+    margin: 20px 22px;
+    color: #CCCCCC;
+    /*border: 2px #0000FF solid;*/
+    border-top: 2px #003300 solid;
+    border-bottom: 2px #003300 solid;
+    box-shadow: 1px 1px 3px 2px gray,
+        1px -1px 3px 2px #E0E0E0,
+        -1px 0 3px 2px #6699FF,
+        1px 0 3px 2px #6699FF,
+        inset 0 1px 5px 1px #FFFFFF;
+    width: 80px;
+    height: 12px;
+    float: left;
+    text-align: center;
+    font-weight: 700;
+    box-sizing: content-box;
+    -webkit-box-sizing:  content-box;
+    -moz-box-sizing: content-box;
+    }
+    a:hover {
+    animation: glow, aniLink .3s;
+    -webkit-animation: glow, aniLink .4s;
+    background-color: #c0c0c0;
+    color: #FFFFFF;
+    box-shadow: 0 0 10px 1px #2e2e2e;
+    text-decoration: none;
