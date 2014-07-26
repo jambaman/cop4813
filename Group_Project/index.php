@@ -40,49 +40,14 @@
 
 <div id="columns" class="float">
 <div id="col1" class="float">
-  
- 
-
-    <div id="form_wrapper">
-            <form id="form" name="form" method="post" action="">
-                <h1>Create an Account</h1>
-                    <div class="col-1">
- 
-                        <label >First Name</label>
-                        <label >Last Name</label>
-                        <label >Email</label>
-                        <label>Choose a Password
-                        <span class="small">At least 1 letter and 1 number</span>
-                        </label>
-                        
-                    </div>
-                    <div class="col-2">
- 
-                        <input type="text" name="firstname" id="fname" required/>
-                        <input type="text" name="lastname" id="lname" required/>
- 
-                        <input type="text" name="email" id="email"  required />
-            <input type="password" name="password1" id="password1"  required />
-            
-                        </div>
- 
-                    <center>
-                      <button type="submit">Register Account</button>
-                    </center>
- 
-            </form>
- 
-</div>
-    
-    
-
+  <?php include 'PHP/register.php';?>
 </div>
 
 <!-- /#col1 -->
 
 <div id="col2" class="float" role="main">
   <h1>Content Column</h1>
-  <?php include 'PHP/register.php'?>
+ 
   <section class="clearfix">
     <h1>Main Content</h1>
     <section>
