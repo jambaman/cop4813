@@ -19,7 +19,7 @@
                         <input type="text" name="lastname" id="lname" required/>
                         <input type="text" name="email" id="email"  required />
 						<input type="password" name="password1" id="password1"  required />
-						<input type="password" name="password2" id="password2"  required />
+						
 					</div>
  
                     <center>
