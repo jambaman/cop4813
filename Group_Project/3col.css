@@ -56,15 +56,19 @@ min-height: 1000px;
 }
 #col1 {
   width: 25%; 
-  z-index: 6; /* min-width is required for a fluid #col2 content which needs to be set to 100% */
+  min-width: 25%; /* min-width is required for a fluid #col2 content which needs to be set to 100% */
+
+
 }
 #col2 {
   width: 55%;  /* 100% required in combination with min-width values in the side-columns for a fluid content */;
-  background: lavender;
+  min-height: 400px;
  
 }
 #col3 {
-  width: 20%;
+  width: 18%;
+  border-left: 2px solid;
+  min-height: 400px;
 }
 #intro {
   background: aliceblue;
@@ -192,24 +196,7 @@ min-height: 1000px;
    * CSS 2 designs (see here: http://matthewjamestaylor.com/blog/perfect-3-column.htm) to fake equalized 
    * column lenghts (same length columns). We use only two DIV wrappers which is semantically useless,
    * one wrapper is use for the whole page and one for the columns. More DIV's are not required. */
-  background-image:  -webkit-linear-gradient(top, #dddddd, mediumseagreen),  
-  -webkit-linear-gradient(top, #dddddd, lavender),  
-  -webkit-linear-gradient(top, #dddddd, white);  /* background for the right column */
-  background-image:  -moz-linear-gradient(top, #dddddd, mediumseagreen),
-  -moz-linear-gradient(top, #dddddd, lavender),
-  -moz-linear-gradient(top, #dddddd, lightcoral);
-  background-image:  -ms-linear-gradient(top, #dddddd, mediumseagreen),
-  -ms-linear-gradient(top, #dddddd, lavender),
-  -ms-linear-gradient(top, #dddddd, lightcoral);
-  background-image:  -o-linear-gradient(top, #dddddd, mediumseagreen),
-  -o-linear-gradient(top, #dddddd, lavender),
-  -o-linear-gradient(top, #dddddd, lightcoral);
-  background-image:  -linear-gradient(top, #dddddd, mediumseagreen),
-  -webkit-linear-gradient(top, #dddddd, lavender),
-  linear-gradient(top, #dddddd, lightcoral);
-  background-position: top left, top center, top right;
-  background-size: 25% 100%, 55% 100%, 20% 100%;  /* the first and third value must correlate with each column width */
-  background-repeat: no-repeat, no-repeat;
+ 
   }
   #header {
     
@@ -480,7 +467,7 @@ nav ul li ul li a{
   }
   #form_wrapper
 {
-    margin:0;
+    margin:5px;
     height: auto;
     width:90%;
     padding:14px;

@@ -74,7 +74,7 @@
      <li><a href="#">Login</a></li>
     </ul>
      </nav>
-  <div id=""
+ 
 </div><!-- /#topBox -->
 
 <div id="columns" class="float">
@@ -85,38 +85,18 @@
 <!-- /#col1 -->
 
 <div id="col2" class="float" role="main">
-  <h1>Content Column</h1>
- 
-  <section class="clearfix">
-    <h1>Main Content</h1>
-    <section>
-      <h2>#col2</h2>
-      Search? or html5 audio
-    </section>
   
-<div id="intro" class="float">
-  <section>
-    <h3>#intro</h3>
-  </section>
-</div><!-- /#intro -->
+      Search? or html5 audio
+  
+<p>kfjek</p>
 
-<div id="main" class="float">
-  <article role="article">
-    <h3>#main</h3>
-    Main listing of tracks
-    </p>
-    
-  </article>
-</div><!-- /#maincontent -->
+<p>ekjekj</p>
 
-<div id="outro" class="float">
-  <section>
-    
-    
-  </section>
-</div><!-- /#outro -->
 
-</section>
+
+
+<p>ekekek</p>
+
 </div><!-- /#col2 -->
 
 <div id="col3" class="float">
