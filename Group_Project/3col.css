@@ -4,12 +4,18 @@
 body,
 div,
 article,
-main,
 aside {
   margin: 0; 
   padding: 0;
 }
+html, body{
 
+padding: 0;
+margin: 0;
+text-align: center;
+min-height: 1000px;
+
+}
 /** All Containers **/
 .float {
   float: left;  /* Holy Grail Revisited doesn't require any positioning. Floating makes all browsers happy */
@@ -21,17 +27,25 @@ aside {
   max-width: 100%;  /* replacing the fixed width with a percentage (e.g. 100%) creates a fluid page content */
   margin: 3px auto;  /* if a fixed width is defined we center the page horizontally with auto */
   border: solid 1px #777;
+ 
 }
 #header {
  display: block;
- background-color: #cfcfcf;
+ 
  min-width: 400px;
  width: 90%;
  margin-left: auto;
  margin-right: auto;
  min-height: 200px;
+ max-height: 350px;
+ background-image: url(img/ocean.jpg);
+    background-repeat: repeat-x;
   
 }
+#header h1{
+  color: #cfcfcf;
+}
+
 #topBox {
   background: #262626;
  
@@ -41,11 +55,13 @@ aside {
   background: beige;
 }
 #col1 {
-  width: 25%;  /* min-width is required for a fluid #col2 content which needs to be set to 100% */
+  width: 25%; 
+  z-index: 6; /* min-width is required for a fluid #col2 content which needs to be set to 100% */
 }
 #col2 {
   width: 55%;  /* 100% required in combination with min-width values in the side-columns for a fluid content */;
   background: lavender;
+ 
 }
 #col3 {
   width: 20%;
@@ -87,6 +103,7 @@ aside {
     background: #cfcfcf;
     max-width: 90%;
     min-width: 400px;
+    
   }
   #col1 {
     background: #ffffcc;
@@ -147,13 +164,15 @@ aside {
     background-image:  -o-linear-gradient(top, #dddddd, mediumseagreen);
     background-image:  -linear-gradient(top, #dddddd, mediumseagreen);
     background-position: top left;
-    background-size: 20% 100%;  /* the first value must correlate with the left column width */
+    background-size: 25% 100%;  /* the first value must correlate with the left column width */
     background-repeat: no-repeat;
   }
   #header {
     background: #cfcfcf;
     min-width: 400px;
     max-width: 90%;
+    
+   
   }
   span.small,
   span.large {
@@ -173,9 +192,9 @@ aside {
    * CSS 2 designs (see here: http://matthewjamestaylor.com/blog/perfect-3-column.htm) to fake equalized 
    * column lenghts (same length columns). We use only two DIV wrappers which is semantically useless,
    * one wrapper is use for the whole page and one for the columns. More DIV's are not required. */
-  background-image:  -webkit-linear-gradient(top, #dddddd, mediumseagreen),  /* background for the left column */
-  -webkit-linear-gradient(top, #dddddd, lavender),  /* background for the content column */
-  -webkit-linear-gradient(top, #dddddd, lightcoral);  /* background for the right column */
+  background-image:  -webkit-linear-gradient(top, #dddddd, mediumseagreen),  
+  -webkit-linear-gradient(top, #dddddd, lavender),  
+  -webkit-linear-gradient(top, #dddddd, white);  /* background for the right column */
   background-image:  -moz-linear-gradient(top, #dddddd, mediumseagreen),
   -moz-linear-gradient(top, #dddddd, lavender),
   -moz-linear-gradient(top, #dddddd, lightcoral);
@@ -189,16 +208,19 @@ aside {
   -webkit-linear-gradient(top, #dddddd, lavender),
   linear-gradient(top, #dddddd, lightcoral);
   background-position: top left, top center, top right;
-  background-size: 20% 100%, 60% 100%, 20% 100%;  /* the first and third value must correlate with each column width */
+  background-size: 25% 100%, 55% 100%, 20% 100%;  /* the first and third value must correlate with each column width */
   background-repeat: no-repeat, no-repeat;
   }
   #header {
-    background: #cfcfcf;
+    
     min-width: 400px;
     max-width: 90%;
+    background-image: url(img/ocean.jpg);
+    background-repeat: repeat-x;
   }
   #col1 {
-    background-image: none;  /* the full width layout "moves" the background image to the column wrapper */
+    background-image: none; 
+    z-index: 9; /* the full width layout "moves" the background image to the column wrapper */
   }
   #col2 section,
   #col2 article,
@@ -462,9 +484,9 @@ nav ul li ul li a{
     height: auto;
     width:90%;
     padding:14px;
-    border:solid 5px #c0c0c0;
+    border:solid 1px #c0c0c0;
     background:#fbfbfb;
-    border-style: groove;
+    
     
 }
  
@@ -548,11 +570,26 @@ padding-bottom: 10px;
       color:black;
       border:1px solid green;
       cursor:pointer;
-  }
+}
 
+.cc-carousel 
+{ 
+    position:relative; 
+    height:300px; 
 
+    
 
+} 
 
+.cc-carousel li 
+{ 
+    position: absolute;
+    top:0; 
+    left: 38%;
+    display: none; 
+ 
+    
 
+}
 
 

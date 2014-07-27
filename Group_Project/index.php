@@ -3,23 +3,62 @@
  <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link href="3col.css" rel="stylesheet" >
-   <!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"> /* This makes IE8 understanding HTML 5 tags*/</script>
-<script src="js/respond.min.js"> /* This adds min/max-width media queries to IE8 */</script>
-<![endif]-->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript">
+  
+   var CC_Carousel = { 
+       nextImage : function(carousel, interval){ 
+           var next; 
+         
+           if($(carousel).find('.cc-carousel-active').length == 0){ 
+               next = $(carousel).find('> li').first(); 
+               next.show(); 
+           } else { 
+               var previous = $(carousel).find('.cc-carousel-active'); 
+               previous.removeClass('cc-carousel-active'); 
+             
+               next = previous.next().length == 1 ? previous.next() : 
+                   $(carousel).find('> li').first(); 
+
+               previous.fadeOut(); 
+               next.fadeIn(); 
+           } 
+         
+           next.addClass('cc-carousel-active'); 
+         
+           setTimeout(function(){ 
+               CC_Carousel.nextImage(carousel, interval); 
+           }, interval); 
+       } 
+   }; 
+
+   $(document).ready(function(){ 
+       $('.cc-carousel').each(function(){ 
+     
+           var interval = $(this).data('interval'); 
+           CC_Carousel.nextImage(this, interval); 
+
+       }); 
+   });
+   </script>
+    <link href="3col.css" rel="stylesheet" > 
 </head>
 
 <body>
 <div id="pageWrap" class="clearfix">
 <div id="header">
-  <h1>Header section</h1>
+  <h1>Featured Artists</h1>
   
-  <header>
-    <h1>Header</h1>
-    <p>carosel with featured artists, our logo, etc</p>
+  
+   <ul class="cc-carousel" data-interval="6000"> 
+       <li><img src="img/kings.jpg" alt=""/></a></li> 
+       <li><img src="img/donkey.jpg" alt=""/></li> 
+       <li><img src="img/raggatip.jpg" alt=""/></li> 
+       <li><img src="img/rave.jpg" alt=""/></li> 
+	   <li><img src="img/beasties.jpg" alt=""/></li>
+   </ul>
     
-  </header>
+
 </div>
 <div id="topBox" class="float">
 
@@ -83,7 +122,7 @@
 <div id="col3" class="float">
   <h1>Right Column</h1>
   <aside role="complementary">
-    <?php?>
+   
     <p>The shopping cart with the selected items can go here
   </aside>
 </div><!-- /#col3 -->
@@ -98,14 +137,16 @@
 </div><!-- /#botBox -->
 
 <div id="footer" class="float">
-  <h1>Footer</h1>
-  <footer role="contentinfo">
-    <h2>#footer</h2>
+ 
+    <h2>Copyright 2014</h2>
+	<p>Internet Programming COP4813</p>
+	<p>Group 4</p>
    
       
   </footer>
 </div><!-- /#footer -->
 
 </div>
+
 </body>
 </html>
